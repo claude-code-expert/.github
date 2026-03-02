@@ -2,11 +2,7 @@
 
 <img src="https://raw.githubusercontent.com/claude-code-expert/.github/main/profile/assets/banner.png" alt="Claude Code Expert" width="100%" />
 
-<br/>
-
-<img src="https://raw.githubusercontent.com/claude-code-expert/.github/main/profile/assets/banner.png" alt="Claude Code Expert Logo" width="160" />
-
-<br/>
+<br/><br/>
 
 **AI-Assisted Development — Principles, Practices, and Production Code**
 
@@ -46,20 +42,16 @@ This organization hosts the companion repositories for the book, along with open
 
 The primary example project used throughout the book (Part 2). A full-stack Kanban board application built with SDD and TDD methodologies using Claude Code.
 
-<img src="https://raw.githubusercontent.com/claude-code-expert/.github/main/profile/assets/tika-intro.png" alt="Tika Intro" width="100%" />
-
-<img src="https://raw.githubusercontent.com/claude-code-expert/.github/main/profile/assets/tika-main.png" alt="Tika Kanban Board" width="100%" />
+<img src="https://raw.githubusercontent.com/claude-code-expert/.github/main/profile/assets/tika-screenshot.png" alt="Tika Kanban Board" width="100%" />
 
 - **Stack**: Next.js 15 (App Router) · TypeScript · Tailwind CSS 4 · Drizzle ORM · Vercel Postgres
 - **Features**: Drag-and-drop kanban board, ticket CRUD, status management, priority ordering
 - **Methodology**: Complete SDD workflow — PRD → TRD → REQUIREMENTS.md → API Spec → Component Spec → Test Cases → Implementation
-- **Demo**: [tika-app.vercel.app](https://tika-app.vercel.app/login)
+- **Demo**: [tika-kappa.vercel.app](https://tika-kappa.vercel.app)
 
 #### [brewnet](https://github.com/claude-code-expert/brewnet) — Self-Hosted Home Server Bootstrapper
 
 An open-source CLI tool that sets up a fully self-hosted home server with a single command. Built entirely with Claude Code as a real-world side project.
-
-<img src="https://raw.githubusercontent.com/claude-code-expert/.github/main/profile/assets/brewnet-web.png" alt="Brewnet Website" width="100%" />
 
 - **Stack**: TypeScript · Node.js · Docker Compose
 - **Features**: 7-step interactive wizard, Docker auto-install, Git/DB/File/Media server setup, Cloudflare Tunnel integration for external access
@@ -68,8 +60,6 @@ An open-source CLI tool that sets up a fully self-hosted home server with a sing
 #### [brewnet-boilerplate](https://github.com/claude-code-expert/brewnet-boilerplate) — Full-Stack Boilerplate Collection
 
 The official boilerplate monorepo for Brewnet — 16 production-ready full-stack templates across 6 programming languages, all launchable with a single command.
-
-<img src="https://raw.githubusercontent.com/claude-code-expert/.github/main/profile/assets/brewnet-boilerplate.png" alt="Brewnet Boilerplate" width="100%" />
 
 - **Languages**: Go · Rust · Java · Kotlin · Node.js · Python
 - **Frameworks**: Gin, Echo, Fiber, Actix-web, Axum, Spring Boot, Spring, Ktor, Express, NestJS, Next.js, FastAPI, Django, Flask
@@ -162,20 +152,16 @@ For questions about the book or this organization, reach out to the authors via 
 
 책의 Part 2 전체에서 사용하는 핵심 예제 프로젝트입니다. Claude Code를 활용하여 SDD와 TDD 방법론으로 개발한 풀스택 칸반 보드 애플리케이션입니다.
 
-<img src="https://raw.githubusercontent.com/claude-code-expert/.github/main/profile/assets/tika-intro.png" alt="Tika 소개" width="100%" />
-
-<img src="https://raw.githubusercontent.com/claude-code-expert/.github/main/profile/assets/tika-main.png" alt="Tika 칸반 보드" width="100%" />
+<img src="https://raw.githubusercontent.com/claude-code-expert/.github/main/profile/assets/tika-screenshot.png" alt="Tika 칸반 보드" width="100%" />
 
 - **기술 스택**: Next.js 15 (App Router) · TypeScript · Tailwind CSS 4 · Drizzle ORM · Vercel Postgres
 - **주요 기능**: 드래그 앤 드롭 칸반 보드, 티켓 CRUD, 상태 관리, 우선순위 정렬
 - **개발 방법론**: SDD 전체 워크플로우 — PRD → TRD → REQUIREMENTS.md → API 명세 → 컴포넌트 명세 → 테스트 케이스 → 구현
-- **데모**: [tika-app.vercel.app](https://tika-app.vercel.app/login)
+- **데모**: [tika-kappa.vercel.app](https://tika-kappa.vercel.app)
 
 #### [brewnet](https://github.com/claude-code-expert/brewnet) — 셀프호스팅 홈 서버 자동 구축 도구
 
 단 하나의 명령어로 완전한 셀프호스팅 홈 서버를 구축하는 오픈소스 CLI 도구입니다. 실전 사이드 프로젝트로서 전체가 Claude Code로 개발되었습니다.
-
-<img src="https://raw.githubusercontent.com/claude-code-expert/.github/main/profile/assets/brewnet-web.png" alt="Brewnet 웹사이트" width="100%" />
 
 - **기술 스택**: TypeScript · Node.js · Docker Compose
 - **주요 기능**: 7단계 대화형 위저드, Docker 자동 설치, Git/DB/파일/미디어 서버 구성, Cloudflare Tunnel 외부 접속
@@ -184,8 +170,6 @@ For questions about the book or this organization, reach out to the authors via 
 #### [brewnet-boilerplate](https://github.com/claude-code-expert/brewnet-boilerplate) — 풀스택 보일러플레이트 모음
 
 Brewnet의 공식 보일러플레이트 모노레포로, 6개 프로그래밍 언어에 걸쳐 16개의 프로덕션 레디 풀스택 템플릿을 제공합니다. 단일 명령어로 실행 가능합니다.
-
-<img src="https://raw.githubusercontent.com/claude-code-expert/.github/main/profile/assets/brewnet-boilerplate.png" alt="Brewnet 보일러플레이트" width="100%" />
 
 - **지원 언어**: Go · Rust · Java · Kotlin · Node.js · Python
 - **프레임워크**: Gin, Echo, Fiber, Actix-web, Axum, Spring Boot, Spring, Ktor, Express, NestJS, Next.js, FastAPI, Django, Flask
