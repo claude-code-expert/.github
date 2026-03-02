@@ -64,7 +64,7 @@ The official boilerplate monorepo for Brewnet — 16 production-ready full-stack
 - **Languages**: Go · Rust · Java · Kotlin · Node.js · Python
 - **Frameworks**: Gin, Echo, Fiber, Actix-web, Axum, Spring Boot, Spring, Ktor, Express, NestJS, Next.js, FastAPI, Django, Flask
 - **Features**: Uniform API contract across all stacks, multi-database support (PostgreSQL/MySQL/SQLite3), Docker multi-stage builds, management dashboard
-- **Website**: [www.brewnet.dev](https://www.brewnet.dev)
+- **github**: [brewnet-boilerplate](https://github.com/claude-code-expert/brewnet-boilerplate)
 
 > *More repositories will be added as the book progresses through its intermediate and advanced sections.*
 
