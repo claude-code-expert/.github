@@ -32,7 +32,16 @@ This organization hosts the companion repositories for the book, along with open
 
 ### 📦 Repositories
 
-#### [tika](https://github.com/claude-code-expert/tika) — Ticket-based Kanban Board TODO App
+#### Book Companion Projects
+
+#### [example](https://github.com/claude-code-expert/example) — Documentation Guide & Templates
+
+A collection of project documentation templates and Claude Code configuration examples from the book. Includes a 3-tier documentation system (PRD → TRD → REQUIREMENTS), CLAUDE.md/AGENTS.md templates, skills, hooks, rules, and CLI cheat sheets.
+
+- **Contents**: Document templates · Coding conventions · Skills & Hooks examples · Claude Code cheat sheet · Subagent guide
+- **Highlights**: 3-tier doc structure, 12 hook scripts, 4 rule templates, external tool guides (SpecKit, SuperClaude, Vercel Agent Skills)
+
+#### [tika](https://github.com/claude-code-expert/tika) — Ticket-based Kanban Board TODO App (Part 2)
 
 The primary example project used throughout the book (Part 2). A full-stack Kanban board application built with SDD and TDD methodologies using Claude Code.
 
@@ -44,6 +53,31 @@ The primary example project used throughout the book (Part 2). A full-stack Kanb
 - **Features**: Drag-and-drop kanban board, ticket CRUD, status management, priority ordering
 - **Methodology**: Complete SDD workflow — PRD → TRD → REQUIREMENTS.md → API Spec → Component Spec → Test Cases → Implementation
 - **Demo**: [tika-app.vercel.app](https://tika-app.vercel.app/login)
+
+#### [todo-app](https://github.com/claude-code-expert/todo-app) — Kanban Board TODO App (Chapter 6)
+
+A companion Kanban board app for Chapter 6. Single-user ticket management with 4 columns (Backlog, TODO, In Progress, Done) and drag-and-drop support. 169 tests across 26 test suites.
+
+- **Stack**: Next.js 15 · React 19 · TypeScript · Tailwind CSS 4 · Drizzle ORM · @dnd-kit
+- **Features**: Ticket CRUD, drag-and-drop reordering, overdue detection, filter bar
+- **Demo**: [ticket-kanban.vercel.app](https://ticket-kanban.vercel.app)
+
+#### [chatbot](https://github.com/claude-code-expert/chatbot) — AI Chatbot with AWS Bedrock (Part 3)
+
+A web-based AI chatbot application for Part 3 (Intermediate). Real-time streaming responses via SSE and Tool Use with AWS Bedrock Claude models.
+
+- **Stack**: React 19 · Vite · Express 5 · TypeScript · Tailwind CSS · shadcn/ui · AWS Bedrock
+- **Features**: SSE token streaming, Tool Use (calculator, time, weather), multi-session management, dark/light theme, Markdown rendering
+
+#### [subagents](https://github.com/claude-code-expert/subagents) — Squad Agent System
+
+Claude Code sub-agent system with 8 specialized agents for automated development workflows. One-line install, pipeline-based chaining, and OS-native notifications.
+
+- **Agents**: review · plan · refactor · qa · debug · docs · gitops · audit
+- **Features**: Model routing (Opus/Sonnet/Haiku), pipeline chaining, SubagentStart/Stop hooks, cross-platform notifications
+- **Install**: `curl -sL https://raw.githubusercontent.com/claude-code-expert/subagents/main/install.sh | bash`
+
+#### Open-Source Side Projects
 
 #### [brewnet](https://github.com/claude-code-expert/brewnet) — Self-Hosted Home Server Bootstrapper
 
@@ -64,9 +98,22 @@ The official boilerplate monorepo for Brewnet — 16 production-ready full-stack
 - **Languages**: Go · Rust · Java · Kotlin · Node.js · Python
 - **Frameworks**: Gin, Echo, Fiber, Actix-web, Axum, Spring Boot, Spring, Ktor, Express, NestJS, Next.js, FastAPI, Django, Flask
 - **Features**: Uniform API contract across all stacks, multi-database support (PostgreSQL/MySQL/SQLite3), Docker multi-stage builds, management dashboard
-- **github**: [brewnet-boilerplate](https://github.com/claude-code-expert/brewnet-boilerplate)
 
-> *More repositories will be added as the book progresses through its intermediate and advanced sections.*
+#### Starter Templates
+
+#### [nodejs](https://github.com/claude-code-expert/nodejs) — Minimal Node.js Web App
+
+A minimal Node.js web application starter, deployable to Railway with one click.
+
+- **Stack**: Node.js
+- **Deploy**: [Railway](https://railway.app)
+
+#### [java-spring-boot](https://github.com/claude-code-expert/java-spring-boot) — Spring Boot Starter App
+
+A Spring Boot starter application, deployable to Railway with one click.
+
+- **Stack**: Java · Spring Boot
+- **Deploy**: [Railway](https://railway.app)
 
 ---
 
