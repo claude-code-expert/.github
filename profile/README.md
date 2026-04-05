@@ -22,11 +22,11 @@
 
 This book goes beyond tool tutorials. It presents a comprehensive methodology for collaborating with AI coding agents — covering specification-driven development (SDD), test-driven development (TDD), and systematic review practices that remain relevant regardless of which AI tool you use.
 
-All example code, project templates, and reference materials from the book are maintained in this organization.
+All example code, project templates and examples, and reference materials from the book are maintained in this repository.
 
 ### What You'll Find Here
 
-This organization hosts the companion repositories for the book, along with open-source side projects built entirely with Claude Code. Each repository demonstrates the principles and workflows discussed in the book — from specification writing to deployment.
+This organization hosts the companion repositories for the book, along with open-source side projects built entirely with Claude Code. Each repository demonstrates the principles and workflows discussed in the book — from specification writing to development methods and deployment, completed together with examples.
 
 ---
 
@@ -36,14 +36,134 @@ This organization hosts the companion repositories for the book, along with open
 
 #### [example](https://github.com/claude-code-expert/example) — Documentation Guide & Templates
 
-A collection of project documentation templates and Claude Code configuration examples from the book. Includes a 3-tier documentation system (PRD → TRD → REQUIREMENTS), CLAUDE.md/AGENTS.md templates, skills, hooks, rules, and CLI cheat sheets.
+A collection of project documentation templates and Claude Code configuration examples from the book. Includes essential documentation systems for Claude Code development (PRD, TRD, REQUIREMENTS), CLAUDE.md/AGENTS.md templates, skills, hooks, rules, and CLI cheat sheets.
 
-- **Contents**: Document templates · Coding conventions · Skills & Hooks examples · Claude Code cheat sheet · Subagent guide
-- **Highlights**: 3-tier doc structure, 12 hook scripts, 4 rule templates, external tool guides (SpecKit, SuperClaude, Vercel Agent Skills)
+- **Contents**: Document templates · Coding conventions · Skills & Hooks examples · Claude Code cheat sheet · Prompt engineering · Context engineering · Harness engineering and subagent descriptions and guide documents
+
+## Skills (3)
+
+Custom AI workflow definition files (`skills/`)
+
+| Skill | Description |
+|-------|-------------|
+| `test-driven-development.md` | RED-GREEN-REFACTOR TDD workflow |
+| `code-reviewer.md` | PR and code quality review (read-only) |
+| `react-component.md` | React component generation based on team conventions |
+
+## Commands (2)
+
+Custom slash commands (`.claude/commands/`)
+
+| Command | Description |
+|---------|-------------|
+| `/optimize` | Analyze codebase docs and suggest execution commands |
+| `/security-checklist` | 7-category security check (input validation, SQL injection, XSS, env vars, dependencies, API, permissions) |
+
+## Hooks (12)
+
+Automation scripts (`.claude/hooks/`)
+
+| Category | File | Trigger |
+|----------|------|---------|
+| **Security** | `block-dangerous.py` | PreToolUse — blocks `rm -rf`, `force push`, `DROP TABLE`, etc. |
+| **Dependency** | `check-deps-py.py` | PreToolUse — warns on missing Python imports |
+| **Formatting** | `format-ts.sh`, `format-py.sh` | PostToolUse — auto-format on save |
+| **Linting** | `lint-ts.sh`, `lint-py.sh` | PostToolUse — lint on modification |
+| **Testing** | `test-ts.sh`, `test-py.sh` | PostToolUse — auto-run tests |
+| **Notifications** | `notify-slack.sh` | Notification/Stop — Slack webhook notification |
+| **Notifications** | `notify-telegram.sh` | Notification/Stop — Telegram bot notification |
+| **Config** | `settings.typescript.json`, `settings.python.json` | Language-specific hook configuration overrides |
+
+## Rules (4)
+
+Path-based coding rules (`.claude/rules/`)
+
+| Rule | Path | Key Content |
+|------|------|-------------|
+| `api-routes.md` | `src/api/**/*.ts` | Response format, error handling, auth, Zod validation |
+| `frontend.md` | `src/components/**/*.tsx` | Functional components, Tailwind, accessibility |
+| `testing.md` | `**/*.test.ts` | AAA pattern, describe/it naming, mock management |
+| `database.md` | `src/models/**/*.ts` | Model definitions, N+1 prevention, pagination, indexes |
+
+## Templates (17)
+
+Reusable configuration templates (`template/`)
+
+| Category | File | Description |
+|----------|------|-------------|
+| **CLAUDE.md** | `CLAUDE.md` | Full example |
+| | `CLAUDE.local.md` | Personal config (gitignored) |
+| | `CLAUDE-template(Root).md` | Monorepo root |
+| | `CLAUDE-template(Client).md` | Client-side |
+| | `CLAUDE-template(Server).md` | Server-side |
+| **AGENTS.md** | `AGENTS-Guide.md` | Writing guide |
+| | `AGENTS-template.md` | Base template |
+| | `AGENTS(java-back).md` | Spring Boot example |
+| **Conventions** | `code-style.md` | Coding style (naming, format, types) |
+| | `root-code-style.md` | Monorepo root code style |
+| | `patterns.md` | Architecture patterns |
+| | `client-patterns.md` | Client patterns (components, hooks, state) |
+| | `server-patterns.md` | Server patterns (middleware, validation, errors) |
+| | `git-workflow.md` | Git branch strategy, commits, PRs |
+| | `testing.md` | Test strategy (unit, integration, E2E) |
+| **Other** | `skill-template.md` | Skill writing template |
+| | `settings.json` | settings.json with annotations |
+
+## Project Docs (7)
+
+3-tier documentation system + external tool guides (`docs/`)
+
+| Tier | File | Description |
+|------|------|-------------|
+| Business | `PRD.md` | Product Requirements Document |
+| Architecture | `TRD.md` | Technical Requirements Document |
+| Implementation | `REQUIREMENTS.md` | AI Implementation Requirements |
+| Reference | `COMMANDS.md` | Complete slash command reference |
+| External Tools | `SpecKit_Guide.md` | Spec-Driven Development framework |
+| | `SuperClaude_Guide.md` | Claude Code extension (30+ commands) |
+| | `Vercel_Agent_Skills_Guide.md` | 17+ AI agent-compatible skill ecosystem |
+
+## Engineering Guides (4)
+
+Advanced learning materials (`guide/`)
+
+| Guide | Key Content |
+|-------|-------------|
+| `prompt-engineering-guide.md` | Zero-shot, few-shot, CoT and other prompting techniques |
+| `context-engineering-guide.md` | Designing the full context that AI sees |
+| `harness-engineering-guide.md` | Agent quality assurance structure (Hooks, Rules, auto-verification) |
+| `claude-code-hooks-guide.md` | Hooks system details (timing, env vars, matchers) |
+
+## References (4)
+
+Cheat sheets & CLI commands
+
+| Document | Description |
+|----------|-------------|
+| `claude-code-cheatsheet-ko` | v2.1.91 shortcuts, commands, config, MCP, permissions (HTML/MD) |
+| `claude-code-unshipped` | 23 unreleased features analysis based on npm source (HTML/MD) |
+| `git_cli.md` | Essential and advanced Git commands |
+| `postgres_cli.md` | PostgreSQL connection, management, CRUD, backup commands |
+
+## Practical Tips (3)
+
+Claude Code usage tips (`tips/`)
+
+| Document | Description |
+|----------|-------------|
+| `CLAUDE-CODE-CLI-ALIAS-SETTINGS.md` | 65+ CLI flags, 20+ shell aliases, danger mode guide |
+| `CLAUDE-CODE-NTFY-MOBILE-APPROVAL.md` | ntfy mobile approval notification setup |
+| `lsp.md` | LSP integration — 3 methods compared (official plugin, cclsp, Serena) |
+
+## Subagent Guide
+
+| Document | Description |
+|----------|-------------|
+| `subagent/subagent.md` | Subagent concepts, internals, definition format, priority, Agent Teams comparison |
 
 #### [tika](https://github.com/claude-code-expert/tika) — Ticket-based Kanban Board TODO App (Part 2)
 
-The primary example project used throughout the book (Part 2). A full-stack Kanban board application built with SDD and TDD methodologies using Claude Code.
+The primary example project used throughout the book (Part 2). A full-stack Kanban board application built with SDD and TDD methodologies using Claude Code, developed with the goal of extending beyond the example into a SaaS service.
 
 <img src="https://raw.githubusercontent.com/claude-code-expert/.github/main/profile/assets/tika_intro.png" alt="Tika 소개" width="100%" />
 <p align="center"><em>Tika Intro</em></p>
@@ -54,14 +174,25 @@ The primary example project used throughout the book (Part 2). A full-stack Kanb
 <img src="https://raw.githubusercontent.com/claude-code-expert/.github/main/profile/assets/tika_board.png" alt="Tika 칸반 대시보드" width="100%" />
 <p align="center"><em>Tika Kanban board</em></p>
 
-- **Stack**: Next.js 15 (App Router) · TypeScript · Tailwind CSS 4 · Drizzle ORM · Vercel Postgres
+---
+
+## Tech Stack
+
+| Area | Technology |
+|------|-----------|
+| **Framework** | Next.js 15 (App Router) |
+| **Language** | TypeScript |
+| **Styling** | Tailwind CSS 4 |
+| **ORM / DB** | Drizzle ORM · Vercel Postgres (Neon) |
+| **Auth** | NextAuth.js v5 (Google OAuth) |
+
 - **Features**: Drag-and-drop kanban board, ticket CRUD, status management, priority ordering
 - **Methodology**: Complete SDD workflow — PRD → TRD → REQUIREMENTS.md → API Spec → Component Spec → Test Cases → Implementation
-- **Demo**: [tika-app.vercel.app](https://tika-app.vercel.app/login)
+- **Website**: [tika-app.vercel.app](https://tika-app.vercel.app/login)
 
 #### [todo-app](https://github.com/claude-code-expert/todo-app) — Kanban Board TODO App (Chapter 6)
 
-A companion Kanban board app for Chapter 6. Single-user ticket management with 4 columns (Backlog, TODO, In Progress, Done) and drag-and-drop support. 169 tests across 26 test suites.
+A hands-on Kanban board app for Part 2 of Claude Code Expert. A prototype of Tika with single-user ticket management across 4 columns (Backlog, TODO, In Progress, Done) and drag-and-drop support.
 
 - **Stack**: Next.js 15 · React 19 · TypeScript · Tailwind CSS 4 · Drizzle ORM · @dnd-kit
 - **Features**: Ticket CRUD, drag-and-drop reordering, overdue detection, filter bar
@@ -88,9 +219,22 @@ Claude Code sub-agent system with 8 specialized agents for automated development
 
 An open-source CLI tool that sets up a fully self-hosted home server with a single command. Built entirely with Claude Code as a real-world side project.
 
+#### Why Use It?
+  Build a complete self-hosted home server with a single command (`brewnet init`) — no complex server knowledge required. External access is automated via Cloudflare Tunnel without port forwarding.
+<br>
+  Key Highlights
+  - 8-step interactive wizard — configure Git server, DB, file server, and media server all at once
+  - Auto-installs Docker even if not present (macOS + Linux)
+  - 16-stack app scaffolding (`brewnet create-app`) — includes Gitea repository + Traefik routing
+  - Web admin dashboard (localhost:8088) — real-time logs, deploy history, domain connection management
+  - Full CLI control from backup, restore, to uninstall
+  - Ultra-fast self-hosted home server setup from install to domain connection in ~3 minutes (may vary by network)
+  - Direct hosting for static homepage content (GitHub, Cloudflare direct connection and internal hosting)
+
+
 <img src="https://raw.githubusercontent.com/claude-code-expert/.github/main/profile/assets/brewnet-web.png" alt="Brewnet Website" width="100%" />
 
-- **Stack**: TypeScript · Node.js · Docker Compose
+- **Stack**: TypeScript 5 · Node.js 20 · Docker Compose · Traefik · Cloudflare Tunnel · Commander.js · SQLite
 - **Features**: 7-step interactive wizard, Docker auto-install, Git/DB/File/Media server setup, Cloudflare Tunnel integration for external access
 - **Website**: [www.brewnet.dev](https://www.brewnet.dev)
 
@@ -101,7 +245,7 @@ The official boilerplate monorepo for Brewnet — 16 production-ready full-stack
 <img src="https://raw.githubusercontent.com/claude-code-expert/.github/main/profile/assets/brewnet-boilerplate.png" alt="Brewnet Boilerplate" width="100%" />
 
 - **Languages**: Go · Rust · Java · Kotlin · Node.js · Python
-- **Frameworks**: Gin, Echo, Fiber, Actix-web, Axum, Spring Boot, Spring, Ktor, Express, NestJS, Next.js, FastAPI, Django, Flask
+- **Supported Framework Boilerplates**: Gin, Echo, Fiber, Actix-web, Axum, Spring Boot, Spring, Ktor, Express, NestJS, Next.js, FastAPI, Django, Flask
 - **Features**: Uniform API contract across all stacks, multi-database support (PostgreSQL/MySQL/SQLite3), Docker multi-stage builds, management dashboard
 
 #### Starter Templates
@@ -152,7 +296,6 @@ A developer with over 20 years of experience spanning Korea and Japan. In Japan,
 
 Since 2014, he has served as CTO of **Dispatch**, Korea's largest entertainment media outlet. He pioneered AWS cloud adoption among Korean media companies, designed and built core systems including a custom CMS, ad management platform, and photo/video database. He engineered a traffic-handling architecture that reduced infrastructure costs by 70% during breaking news events with tens of millions of concurrent users, and developed large-scale web traffic analytics tools for data-driven media operations. Gold Award winner at the 2013 Korea Open Source Software Developer Contest.
 
-[![GitHub](https://img.shields.io/badge/GitHub-pekuid-181717?logo=github)](https://github.com/pekuid)
 [![Email](https://img.shields.io/badge/Email-pekuid@gmail.com-EA4335?logo=gmail&logoColor=white)](mailto:pekuid@gmail.com)
 
 </td>
@@ -163,14 +306,13 @@ Since 2014, he has served as CTO of **Dispatch**, Korea's largest entertainment 
 
 ### 📖 Book Overview
 
-The book is structured in four parts, progressing from theory to practice, and from fundamentals to advanced topics:
+The book is structured in three parts, progressing from theory to practice, and from fundamentals to advanced topics:
 
 | Part | Title | Description |
 |:----:|-------|-------------|
 | **1** | Getting Started | Developer paradigm shift, Claude Code setup, AI collaboration methodology (TDD, SDD, MCP) |
 | **2** | Beginner | Full-stack TODO app (Tika) — requirements → design → development → testing → deployment |
-| **3** | Intermediate | AI chatbot with AWS Bedrock — streaming, context management, Tool Use, Docker deployment |
-| **4** | Real-World | Advanced techniques, hallucination handling, large codebase strategies, team collaboration |
+| **3** | Intermediate | AI chatbot with AWS Bedrock — streaming, context management, Tool Use, advanced techniques, hallucination handling |
 
 **Core Philosophy**: *Tools change. Principles don't.* The methodologies in this book apply to any AI coding agent — Claude Code, Cursor, Copilot, Codex, or whatever comes next.
 
