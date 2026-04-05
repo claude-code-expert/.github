@@ -46,10 +46,13 @@ A collection of project documentation templates and Claude Code configuration ex
 The primary example project used throughout the book (Part 2). A full-stack Kanban board application built with SDD and TDD methodologies using Claude Code.
 
 <img src="https://raw.githubusercontent.com/claude-code-expert/.github/main/profile/assets/tika_intro.png" alt="Tika 소개" width="100%" />
+<p align="center"><em>Tika Intro</em></p>
 
 <img src="https://raw.githubusercontent.com/claude-code-expert/.github/main/profile/assets/tika_main.png" alt="Tika 칸반 보드 메인" width="100%" />
+<p align="center"><em>Tika Main</em></p>
 
 <img src="https://raw.githubusercontent.com/claude-code-expert/.github/main/profile/assets/tika_board.png" alt="Tika 칸반 대시보드" width="100%" />
+<p align="center"><em>Tika Kanban board</em></p>
 
 - **Stack**: Next.js 15 (App Router) · TypeScript · Tailwind CSS 4 · Drizzle ORM · Vercel Postgres
 - **Features**: Drag-and-drop kanban board, ticket CRUD, status management, priority ordering

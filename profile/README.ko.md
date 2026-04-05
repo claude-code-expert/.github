@@ -46,10 +46,13 @@
 책의 Part 2 전체에서 사용하는 핵심 예제 프로젝트입니다. Claude Code를 활용하여 SDD와 TDD 방법론으로 개발한 풀스택 칸반 보드 애플리케이션입니다.
 
 <img src="https://raw.githubusercontent.com/claude-code-expert/.github/main/profile/assets/tika_intro.png" alt="Tika 소개" width="100%" />
+<p align="center"><em>Tika Intro</em></p>
 
 <img src="https://raw.githubusercontent.com/claude-code-expert/.github/main/profile/assets/tika_main.png" alt="Tika 칸반 보드 메인" width="100%" />
+<p align="center"><em>Tika Main</em></p>
 
 <img src="https://raw.githubusercontent.com/claude-code-expert/.github/main/profile/assets/tika_board.png" alt="Tika 칸반 대시보드" width="100%" />
+<p align="center"><em>Tika Kanban board</em></p>
 
 - **기술 스택**: Next.js 15 (App Router) · TypeScript · Tailwind CSS 4 · Drizzle ORM · Vercel Postgres
 - **주요 기능**: 드래그 앤 드롭 칸반 보드, 티켓 CRUD, 상태 관리, 우선순위 정렬
