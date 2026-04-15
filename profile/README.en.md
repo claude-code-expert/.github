@@ -39,7 +39,11 @@ All example code, project templates and examples, and reference materials from t
 
 #### What You'll Find Here
 
-This organization hosts the companion repositories for the book, along with open-source side projects built entirely with Claude Code. Each repository demonstrates the principles and workflows discussed in the book — from specification writing to development methods and deployment, completed together with examples.
+This organization hosts the companion repositories for the book, along with open-source side projects built entirely with Claude Code. Each repository showcases production code developed using the principles and workflows discussed in the book — from ticket-based Kanban boards to chatbot projects, walking through specification writing, development methods, and deployment step by step with example code.
+
+Additional projects beyond the book's scope — including Subagent development, a Markdown-based knowledge store, Brewnet for easy home server hosting, and 16 framework boilerplates — are all complete as of the 2026 publication date.
+
+For inquiries about the book or projects, please contact brewnet.dev@gmail.com.
 
 </td>
 </tr>
