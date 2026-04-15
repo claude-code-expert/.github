@@ -7,7 +7,7 @@
 
 **AI-Assisted Development — Principles, Practices, and Production Code**
 
-[![Book](https://img.shields.io/badge/Book-Claude_Code_Expert-2E75B6?style=for-the-badge&logo=bookstack&logoColor=white)](#about)
+[![Book](https://img.shields.io/badge/Book-Claude_Code_Master-2E75B6?style=for-the-badge&logo=bookstack&logoColor=white)](#about)
 [![License](https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge)](LICENSE)
 
 **English** · [한국어](https://github.com/claude-code-expert/.github/blob/main/profile/README.md)
