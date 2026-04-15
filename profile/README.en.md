@@ -18,15 +18,32 @@
 
 ### About
 
-**Claude Code Expert** is the official GitHub organization for the book *"Claude Code Expert — AI-Assisted Development from Design to Deployment."*
+<table>
+<tr>
+<td width="35%" align="center" valign="top">
+
+<img src="https://raw.githubusercontent.com/claude-code-expert/.github/main/profile/assets/cc-master.png" alt="Claude Code Master" width="100%" />
+
+<br/>
+
+<a href="https://product.kyobobook.co.kr/detail/S000219725328" target="_blank"><img src="https://img.shields.io/badge/Claude_Code_Master-Buy_Online-2E75B6?style=for-the-badge&logo=bookstack&logoColor=white" alt="Claude Code Master Buy Online" /></a>
+
+</td>
+<td width="65%" valign="top">
+
+**Claude Code Expert** is the official GitHub organization for the book *"Claude Code Master — Agentic Coding Workflow: Planning, Development, and Operations All in One."*
 
 This book goes beyond tool tutorials. It presents a comprehensive methodology for collaborating with AI coding agents — covering specification-driven development (SDD), test-driven development (TDD), and systematic review practices that remain relevant regardless of which AI tool you use.
 
 All example code, project templates and examples, and reference materials from the book are maintained in this repository.
 
-### What You'll Find Here
+#### What You'll Find Here
 
 This organization hosts the companion repositories for the book, along with open-source side projects built entirely with Claude Code. Each repository demonstrates the principles and workflows discussed in the book — from specification writing to development methods and deployment, completed together with examples.
+
+</td>
+</tr>
+</table>
 
 ---
 
