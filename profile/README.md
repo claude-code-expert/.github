@@ -18,15 +18,32 @@
 
 ### 소개
 
+<table>
+<tr>
+<td width="35%" align="center" valign="top">
+
+<img src="https://raw.githubusercontent.com/claude-code-expert/.github/main/profile/assets/cc-master.png" alt="클로드 코드 마스터" width="100%" />
+
+<br/>
+
+[![클로드 코드 마스터 온라인 구매](https://img.shields.io/badge/클로드_코드_마스터-온라인_구매-2E75B6?style=for-the-badge&logo=bookstack&logoColor=white)](https://product.kyobobook.co.kr/detail/S000219725328)
+
+</td>
+<td width="65%" valign="top">
+
 **Claude Code Expert**는 『Claude Code Expert — 설계부터 배포까지, AI와 함께하는 개발』의 공식 GitHub 조직입니다.
 
 이 책은 단순한 도구 사용법 튜토리얼이 아닙니다. AI 코딩 에이전트와 체계적으로 협업하는 방법론을 제시합니다 — 명세 주도 개발(SDD), 테스트 주도 개발(TDD), 그리고 어떤 AI 도구를 사용하든 변하지 않는 체계적인 리뷰 프로세스까지 다룹니다.
 
 책에 수록된 모든 예제 코드, 프로젝트 템플릿과 예제, 참고 자료가 이 레파지터리에서 관리됩니다.
 
-### 이 조직에서 제공하는 것
+#### 이 조직에서 제공하는 것
 
-이 조직은 책의 companion 레포지토리와 함께, Claude Code로 직접 개발한 오픈소스 사이드 프로젝트를 호스팅합니다. 각 레포지토리는 책에서 논의하는 원칙과 워크플로우를 실제로 보여줍니다 — 명세 작성부터 개발 방법, 배포까지 예제와 함께 완성해 나갑니다. 
+이 조직은 책의 companion 레포지토리와 함께, Claude Code로 직접 개발한 오픈소스 사이드 프로젝트를 호스팅합니다. 각 레포지토리는 책에서 논의하는 원칙과 워크플로우를 실제로 보여줍니다 — 명세 작성부터 개발 방법, 배포까지 예제와 함께 완성해 나갑니다.
+
+</td>
+</tr>
+</table>
 
 ---
 
