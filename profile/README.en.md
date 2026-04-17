@@ -269,6 +269,27 @@ The official boilerplate monorepo for Brewnet — 16 production-ready full-stack
 - **Supported Framework Boilerplates**: Gin, Echo, Fiber, Actix-web, Axum, Spring Boot, Spring, Ktor, Express, NestJS, Next.js, FastAPI, Django, Flask
 - **Features**: Uniform API contract across all stacks, multi-database support (PostgreSQL/MySQL/SQLite3), Docker multi-stage builds, management dashboard
 
+#### [markflow](https://github.com/claude-code-expert/markflow) — Markdown-Based Team Knowledge Management System (KMS)
+
+A team-oriented Knowledge Management System built around Markdown. Designed as a monorepo with a standalone editor package, a Next.js 16 frontend, a Fastify 5 backend, and a Drizzle ORM schema — supporting both npm distribution and self-hosting.
+
+- **Stack**: Next.js 16 · Fastify 5 · CodeMirror 6 · remark/rehype · KaTeX · Drizzle ORM · PostgreSQL 16 · Zustand · React Query · Tailwind CSS 4
+- **Features**: Standalone Markdown editor (`@markflow/editor`, npm-publishable), workspace-based RBAC (Owner/Admin/Editor/Viewer), document CRUD with version history, category closure-based hierarchy, document-to-document relations, tags · comments · invitations · embed tokens, math & syntax highlighting, rehype-sanitize XSS protection
+- **Deployment**: Vercel (web) + Railway/Render/Fly.io (api) + Supabase/Neon (DB) + Cloudflare R2 Worker (image upload)
+
+<img src="https://raw.githubusercontent.com/claude-code-expert/.github/main/profile/assets/mark-1.png" alt="MarkFlow Landing" width="100%" />
+<p align="center"><em>MarkFlow Landing</em></p>
+
+<img src="https://raw.githubusercontent.com/claude-code-expert/.github/main/profile/assets/mark-2.png" alt="MarkFlow Features" width="100%" />
+<p align="center"><em>MarkFlow Features</em></p>
+
+<img src="https://raw.githubusercontent.com/claude-code-expert/.github/main/profile/assets/mark-3.png" alt="MarkFlow Document Authoring" width="100%" />
+<p align="center"><em>MarkFlow Document Authoring</em></p>
+
+<img src="https://raw.githubusercontent.com/claude-code-expert/.github/main/profile/assets/mark-4.png" alt="MarkFlow Related Document Structure" width="100%" />
+<p align="center"><em>MarkFlow Related Document Structure</em></p>
+
+
 #### Starter Templates
 
 #### [nodejs](https://github.com/claude-code-expert/nodejs) — Minimal Node.js Web App
